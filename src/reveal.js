@@ -1,4 +1,4 @@
-const reveal = () => {
+export const reveal = () => {
     const revealList = Array.from(document.querySelectorAll(".reveal"));
     console.log(revealList);
 
