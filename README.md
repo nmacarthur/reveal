@@ -1,7 +1,7 @@
 # @nmacarthur/reveal
 
-[![npm (scoped)](https://img.shields.io/npm/v/@bamblehorse/tiny.svg)](https://www.npmjs.com/package/@bamblehorse/tiny)
-[![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/@nmacarthur/reveal.svg)](https://www.npmjs.com/package/@nmacarthur/reveal)
+[![npm (scoped)](https://img.shields.io/npm/v/@nmacarthur/reveal.svg)](https://www.npmjs.com/package/@nmacarthur/reveal)
+[![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/react.svg)](https://github.com/nmacarthur/reveal)
 
 Creates a lightweight reveal object
 
