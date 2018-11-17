@@ -1,0 +1,157 @@
+.reveal {
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.contentlayer {
+  width: 100%;
+  height: 100%;
+  background: url("https://images.unsplash.com/photo-1542137722061-efd1cbdf156c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=69b9754011a0840c859142eaa6c153ba&auto=format&fit=crop&w=1500&q=80");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+
+  &.visible {
+    -webkit-animation-name: contentAnimateLeft;
+    animation-name: contentAnimateLeft;
+    -webkit-animation-duration: 800ms;
+    animation-duration: 800ms;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+}
+
+.colorlayer { 
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  
+  &.visible {
+    -webkit-animation-name: colorAnimateLeft;
+    animation-name: colorAnimateLeft;
+    -webkit-animation-duration: 1200ms;
+    animation-duration: 1200ms;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+} 
+
+
+.container.visible {
+  -webkit-animation-name: containerAnimateLeft;
+  animation-name: containerAnimateLeft;
+  -webkit-animation-duration: 600ms;
+  animation-duration: 600ms;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes containerAnimateLeft {
+
+  0% {
+    -webkit-transform: translateX(-40px);
+    transform: translateX(-40px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+}
+
+@keyframes containerAnimateLeft {
+
+  0% {
+    -webkit-transform: translateX(-40px);
+    transform: translateX(-40px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes contentAnimateLeft {
+
+  0% {
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+}
+
+@keyframes contentAnimateLeft {
+
+  0% {
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes colorAnimateLeft {
+
+  0% {
+    width: 0%;
+    left: 0;
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    left: 100%;
+    width: 100%;
+  }
+  
+  100% {
+    left: 100%;
+    width: 0%;
+  }
+}
+
+@keyframes colorAnimateLeft {
+
+  0% {
+    width: 0%;
+    left: 0;
+    opacity: 0;
+  }
+  
+  50% {
+    opacity: 1;
+    left: 100%;
+    width: 100%;
+  }
+  
+  100% {
+    left: 100%;
+    width: 0%;
+  }
+}
