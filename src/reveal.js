@@ -1,4 +1,4 @@
-export const reveal = () => {
+const Reveal = () => {
     const revealList = Array.from(document.querySelectorAll(".reveal"));
 
     require('./styles.css');
@@ -42,3 +42,5 @@ export const reveal = () => {
       revealList.forEach(element => action(element));
     });
   };
+
+  export default Reveal;

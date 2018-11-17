@@ -1,3 +1,3 @@
-const Reveal = require('lib/reveal.js');
+const Reveal = require('./lib/reveal.js');
 
 export default Reveal;
