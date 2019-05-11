@@ -14,27 +14,8 @@
         "package",
         "nmacarthur"
     ],
-    "devDependencies": {
-        "@babel/cli": "^7.1.5",
-        "@babel/core": "^7.1.6",
-        "babel-minify": "^0.5.0",
-        "babel-preset-airbnb": "^3.0.1",
-        "gulp": "latest",
-        "gulp-sass": "latest",
-        "gulp-util": "latest"
-    },
     "dependencies": {
-        "@babel/polyfill": "^7.0.0",
-        "autoprefixer": "^9.3.1",
-        "gulp-postcss": "^8.0.0",
-        "gulp-sourcemaps": "^2.6.4",
-        "postcss": "^7.0.5",
-        "stylelint": "^9.8.0",
-        "stylelint-config-airbnb": "^0.0.0",
-        "stylelint-order": "^1.0.0",
-        "stylelint-scss": "^3.4.0"
-    },
-    "stylelint": {
-        "extends": "stylelint-config-airbnb"
+        "animejs": "^3.0.1",
+        "viewprt": "^3.1.0"
     }
 }
